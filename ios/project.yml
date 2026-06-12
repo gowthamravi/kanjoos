@@ -1,0 +1,22 @@
+name: Kanjoos
+options:
+  bundleIdPrefix: com.gowtham
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  Kanjoos:
+    type: application
+    platform: iOS
+    sources: [Kanjoos]
+    info:
+      path: Kanjoos/Info.plist
+      properties:
+        UILaunchScreen: {}
+        CFBundleDisplayName: Kanjoos
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSLocalNetworkUsageDescription: Kanjoos talks to its backend server running on your Mac over the local network.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.gowtham.kanjoos
+        SWIFT_VERSION: "5.9"
