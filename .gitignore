@@ -16,3 +16,4 @@ DerivedData/
 
 # Local helper script
 start.sh
+*.command
